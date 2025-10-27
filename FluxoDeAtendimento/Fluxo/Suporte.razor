@@ -1,0 +1,70 @@
+﻿@page "/fluxo/suporte"
+@inject FluxoDeAtendimento.Repositories.ContatoRepository ContatoRepo
+@inject NavigationManager NavManager
+
+<h3 class="text-2xl font-bold mb-2">Fluxo - Suporte</h3>
+
+@if (contato is null)
+{
+    <p>Nenhum contato identificado. <a href="/identificacao">Clique aqui</a> para começar novamente.</p>
+}
+else
+{
+    <div class="bg-gray-50 p-4 rounded border mb-4" style="max-width:600px;">
+        <p><strong>Nome:</strong> @contato.Nome</p>
+        <p><strong>Usuário:</strong> @contato.Usuario</p>
+        <p><strong>Administrador:</strong> @contato.Administrador</p>
+        <p><strong>Situação:</strong> @contato.Situacao</p>
+    </div>
+
+    <p class="mb-3">Escolha o caminho para seguir com o atendimento:</p>
+
+    <div style="display:flex; flex-direction:column; gap:10px; width:200px; margin-top:10px;">
+        <button class="btn btn-warning" @onclick="IrParaCadastros">Cadastros</button>
+        <button class="btn btn-warning" @onclick="IrParaFiscal">Fiscal</button>
+        <button class="btn btn-warging" @onclick="IrParaVendas">Vendas</button>
+        <button class="btn btn-primary" @onclick="VoltarIdentificacao">Voltar para Identificação</button>
+    </div>
+
+    <h4 class="mt-6 mb-2 text-lg font-semibold">Histórico de etapas</h4>
+    <ul class="list-disc pl-6">
+        @foreach (var etapa in ContatoRepo.ObterHistorico())
+        {
+            <li>@etapa</li>
+        }
+    </ul>
+}
+
+@code {
+    private FluxoDeAtendimento.Models.Contato? contato;
+
+    protected override void OnInitialized()
+    {
+        contato = ContatoRepo.ObterContatoAtual();
+        if (contato != null)
+        {
+            ContatoRepo.RegistrarEtapa("Entrou na etapa de Suporte");
+        }
+    }
+
+    private void IrParaCadastros()
+    {
+        NavManager.NavigateTo("/fluxo/cadastros");
+    }
+
+    private void IrParaFiscal()
+    {
+        NavManager.NavigateTo("/fluxo/fiscal");
+    }
+
+    private void IrParaVendas()
+    {
+        NavManager.NavigateTo("/fluxo/vendas");
+    }
+
+
+    private void VoltarIdentificacao()
+    {
+        NavManager.NavigateTo("/identificacao");
+    }
+}
