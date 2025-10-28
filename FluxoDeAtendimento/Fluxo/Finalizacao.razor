@@ -12,8 +12,17 @@
     <p><strong>Situação:</strong> @contato.Situacao</p>
     <p><strong>Módulo: Cadastros</strong></p>
     <p><strong>• Cadastros de Pessoas</strong></p>
+    <p><strong>Conclusão: </strong>@contato.Conclusao</p>
     <p><strong>• Finalização do atendimento</strong></p>
+    @if (!string.IsNullOrWhiteSpace(ContatoRepo.ObterConclusao()))
+    {
+        <div class="mt-2 p-2 bg-gray-100 rounded border">
+            <strong>Conclusão:</strong>
+            <p>@ContatoRepo.ObterConclusao()</p>
+        </div>
+    }
 </div>
+
 }
 @code {
     private FluxoDeAtendimento.Models.Contato? contato;
@@ -28,6 +37,18 @@
     }
 
     private void VoltarInicio() => NavManager.NavigateTo("/identificacao");
+    private void FinalizarAtendimento()
+{
+
+        NavManager.NavigateTo("/fluxo/finalizacao");
+}
+}
+@if (!string.IsNullOrWhiteSpace(ContatoRepo.ObterConclusao()))
+{
+    <div class="mt-2 p-2 bg-gray-100 rounded border">
+        <strong>Conclusão:</strong>
+        <p>@ContatoRepo.ObterConclusao()</p>
+    </div>
 }
 
 <h4 class="mt-6 mb-2 text-lg font-semibold">Histórico de etapas</h4>

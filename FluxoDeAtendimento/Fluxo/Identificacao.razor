@@ -45,7 +45,7 @@
     <div style="margin-top:20px;">
         <p><strong>Contato salvo:</strong> @ContatoRepo.ObterContatoAtual()?.Nome</p>
 <div style="display:flex; flex-direction:column; gap:10px; width:200px; margin-top:10px;">
-    <button class="btn btn-success w-100" @onclick="IrParaFinanceiro">Financeiro</button>
+    <button class="btn btn-success w-100" @onclick="IrParaFinanceiro">Setor Financeiro</button>
     <button class="btn btn-info w-100" @onclick="IrParaSuporte">Suporte</button>
 </div>
     </div>
@@ -64,7 +64,7 @@
 
     private void IrParaFinanceiro()
     {
-        NavManager.NavigateTo("/fluxo/financeiro");
+        NavManager.NavigateTo("/fluxo/setorfinanceiro");
     }
 
     private void IrParaSuporte()

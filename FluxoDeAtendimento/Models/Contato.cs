@@ -14,7 +14,9 @@ namespace FluxoDeAtendimento.Models
 
         [Required(ErrorMessage = "Situação obrigatória")]
         public string Situacao { get; set; } = string.Empty;
-        
+
+        public string Conclusao { get; set; } = string.Empty;
+
         // opcional: id para evolução futura
         public Guid Id { get; set; } = Guid.NewGuid();
     }

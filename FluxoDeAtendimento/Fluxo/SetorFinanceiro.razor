@@ -1,0 +1,91 @@
+﻿@page "/fluxo/setorfinanceiro"
+@inject FluxoDeAtendimento.Repositories.ContatoRepository ContatoRepo
+@inject NavigationManager NavManager
+
+<h3 class="text-2xl font-bold mb-3">Fluxo - Setor Financeiro</h3>
+
+@if (contato is null)
+{
+    <p>Nenhum contato identificado. <a href="/identificacao">Clique aqui</a> para começar novamente.</p>
+}
+else
+{
+    <div class="bg-gray-50 p-4 rounded border mb-4" style="max-width:600px;">
+        <p><strong>Nome:</strong> @contato.Nome</p>
+        <p><strong>Usuário:</strong> @contato.Usuario</p>
+        <p><strong>Situação:</strong> @contato.Situacao</p>
+    </div>
+
+    <div class="bg-blue-50 p-4 rounded border border-blue-300 mb-4">
+        <h4 class="font-semibold text-blue-700 mb-2">📘 Orientação para o atendente</h4>
+        <p>
+            Caso o cliente entre em contato com o suporte, mas o assunto se refira a questões financeiras
+            (como cobrança, plano, boleto ou alteração de titularidade),
+            oriente-o a entrar em contato diretamente com o setor financeiro pelos seguintes canais:
+        </p>
+        <ul class="list-disc pl-6 mt-2">
+            <li>Email: <strong>financeiro@sige.com</strong></li>
+            <li>Telefone: <strong>(51) 99999-38283</strong></li>
+        </ul>
+        <p class="mt-2">
+            O setor financeiro é o responsável por pagamentos, faturas e planos de assinatura.
+        </p>
+    </div>
+
+    <div class="bg-green-50 p-4 rounded border border-green-300 mb-4">
+        <h4 class="font-semibold text-green-700 mb-2">💬 Sugestão de mensagem para o cliente</h4>
+        <p>
+            <i>
+                Olá, <strong>@contato.Nome</strong>! Verifiquei aqui que a sua solicitação está relacionada
+                a assuntos financeiros (como cobrança ou plano).
+                Para agilizar seu atendimento, peço que entre em contato com nosso setor financeiro diretamente:
+                <br />
+                📧 <strong>financeiro@sige.com</strong><br />
+                ☎️ <strong>(51) 99999-38283</strong><br />
+                <br />
+                Eles poderão te ajudar de forma mais rápida e precisa na sua demanda financeira! 😊
+            </i>
+        </p>
+    </div>
+
+    <div class="d-flex flex-column gap-2 mt-3" style="max-width:200px;">
+        <button class="btn btn-primary" @onclick="VoltarParaSuporte">Voltar para Suporte</button>
+        <button class="btn btn-primary" @onclick="VoltarInicio">Voltar à Identificação</button>
+        <button class="btn btn-primary" @onclick="FinalizarAtendimento">Finalizar</button>
+    </div>
+
+    <h4 class="mt-6 mb-2 text-lg font-semibold">Histórico de etapas</h4>
+    <ul class="list-disc pl-6">
+        @foreach (var etapa in ContatoRepo.ObterHistorico())
+        {
+            <li>@etapa</li>
+        }
+    </ul>
+}
+
+@code {
+    private FluxoDeAtendimento.Models.Contato? contato;
+
+    protected override void OnInitialized()
+    {
+        contato = ContatoRepo.ObterContatoAtual();
+        if (contato != null)
+        {
+            ContatoRepo.RegistrarEtapa("Entrou na etapa Financeiro");
+        }
+    }
+
+    private void VoltarParaSuporte()
+    {
+        NavManager.NavigateTo("/fluxo/suporte");
+    }
+
+    private void VoltarInicio()
+    {
+        NavManager.NavigateTo("/identificacao");
+    }
+    private void FinalizarAtendimento()
+    {
+        NavManager.NavigateTo("/finalizacao");
+    }
+}

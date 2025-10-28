@@ -4,6 +4,15 @@ namespace FluxoDeAtendimento.Repositories
 {
     public class ContatoRepository
     {
+        private string conclusao = string.Empty;
+
+        public void DefinirConclusao(string texto)
+        {
+            conclusao = texto;
+        }
+
+        public string ObterConclusao() => conclusao;
+
         private Contato? _contatoAtual;
         private readonly List<string> _historicoEtapas = new();
 
@@ -49,5 +58,6 @@ namespace FluxoDeAtendimento.Repositories
                 RegistrarEtapa("Contato atualizado");
             }
         }
+
     }
 }

@@ -4,6 +4,8 @@
 
 <h3 class="text-2xl font-bold mb-2">Fluxo - Cadastros / Produtos</h3>
 
+
+
 @if (contato is null)
 {
     <p>Nenhum contato identificado. <a href="/identificacao">Clique aqui</a> para começar novamente.</p>
@@ -17,6 +19,18 @@ else
         <p><strong>Situação:</strong> @contato.Situacao</p>
         <p><strong>Módulo: Cadastros</strong></p>
         <p><strong>• Cadastros de Produtos</strong></p>
+    </div>
+
+    <!-- Campo de Conclusão -->
+    <div class="bg-gray-100 p-4 rounded border mb-4" style="max-width:600px;">
+        <label for="conclusao" class="font-semibold block mb-2">Conclusão:</label>
+    <textarea id="conclusao"
+              class="w-full border rounded p-2 block resize-both overflow-auto align-top"
+              rows="4"
+              placeholder="Digite a conclusão do atendimento..."
+              @bind="conclusao">
+    </textarea>
+
     </div>
 
     <!-- Orientação ao atendente -->
@@ -70,7 +84,7 @@ else
 
     <!-- Botões -->
     <div style="display:flex; flex-direction:column; gap:10px; width:200px; margin-top:10px;">
-        <button class="btn btn-warning w-full" @onclick="VoltarCadastros">Voltar para Cadastros</button>
+        <button class="btn btn-primary w-full" @onclick="VoltarCadastros">Voltar para Cadastros</button>
         <button class="btn btn-primary w-full" @onclick="VoltarSuporte">Voltar para Suporte</button>
         <button class="btn btn-primary w-full" @onclick="FinalizarAtendimento">Finalizar Atendimento</button>
     </div>
@@ -87,6 +101,7 @@ else
 
 @code {
     private FluxoDeAtendimento.Models.Contato? contato;
+    private string conclusao = string.Empty;
 
     protected override void OnInitialized()
     {
@@ -97,7 +112,17 @@ else
         }
     }
 
-     private void VoltarCadastros() => NavManager.NavigateTo("/fluxo/cadastros");
+    private void VoltarCadastros() => NavManager.NavigateTo("/fluxo/cadastros");
     private void VoltarSuporte() => NavManager.NavigateTo("/fluxo/suporte");
-    private void FinalizarAtendimento() => NavManager.NavigateTo("/fluxo/finalizacao");
+
+    private void FinalizarAtendimento()
+    {
+        if (!string.IsNullOrWhiteSpace(conclusao))
+        {
+            ContatoRepo.DefinirConclusao(conclusao);
+            ContatoRepo.RegistrarEtapa($"Conclusão: {conclusao}");
+        }
+
+        NavManager.NavigateTo("/fluxo/finalizacao");
+    }
 }
