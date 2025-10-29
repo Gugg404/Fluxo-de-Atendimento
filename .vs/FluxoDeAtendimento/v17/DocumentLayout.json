@@ -3,80 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\gustavo.flores\\source\\repos\\FluxoDeAtendimento\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8CC023E5-C059-40D6-A1FC-DF4ED649D0B3}|FluxoDeAtendimento\\FluxoDeAtendimento.csproj|c:\\users\\gustavo.flores\\source\\repos\\fluxodeatendimento\\fluxodeatendimento\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{8CC023E5-C059-40D6-A1FC-DF4ED649D0B3}|FluxoDeAtendimento\\FluxoDeAtendimento.csproj|solutionrelative:fluxodeatendimento\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+      "AbsoluteMoniker": "D:0:0:{8CC023E5-C059-40D6-A1FC-DF4ED649D0B3}|FluxoDeAtendimento\\FluxoDeAtendimento.csproj|c:\\users\\gustavo.flores\\source\\repos\\fluxodeatendimento\\fluxodeatendimento\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{8CC023E5-C059-40D6-A1FC-DF4ED649D0B3}|FluxoDeAtendimento\\FluxoDeAtendimento.csproj|solutionrelative:fluxodeatendimento\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8CC023E5-C059-40D6-A1FC-DF4ED649D0B3}|FluxoDeAtendimento\\FluxoDeAtendimento.csproj|c:\\users\\gustavo.flores\\source\\repos\\fluxodeatendimento\\fluxodeatendimento\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8CC023E5-C059-40D6-A1FC-DF4ED649D0B3}|FluxoDeAtendimento\\FluxoDeAtendimento.csproj|solutionrelative:fluxodeatendimento\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8CC023E5-C059-40D6-A1FC-DF4ED649D0B3}|FluxoDeAtendimento\\Fluxo De Atendimento.csproj|c:\\users\\gustavo.flores\\source\\repos\\fluxodeatendimento\\fluxodeatendimento\\fluxo\\identificacao.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8CC023E5-C059-40D6-A1FC-DF4ED649D0B3}|FluxoDeAtendimento\\Fluxo De Atendimento.csproj|solutionrelative:fluxodeatendimento\\fluxo\\identificacao.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8CC023E5-C059-40D6-A1FC-DF4ED649D0B3}|FluxoDeAtendimento\\FluxoDeAtendimento.csproj|c:\\users\\gustavo.flores\\source\\repos\\fluxodeatendimento\\fluxodeatendimento\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{8CC023E5-C059-40D6-A1FC-DF4ED649D0B3}|FluxoDeAtendimento\\FluxoDeAtendimento.csproj|solutionrelative:fluxodeatendimento\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{8CC023E5-C059-40D6-A1FC-DF4ED649D0B3}|FluxoDeAtendimento\\Fluxo De Atendimento.csproj|c:\\users\\gustavo.flores\\source\\repos\\fluxodeatendimento\\fluxodeatendimento\\fluxo\\fiscal.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8CC023E5-C059-40D6-A1FC-DF4ED649D0B3}|FluxoDeAtendimento\\Fluxo De Atendimento.csproj|solutionrelative:fluxodeatendimento\\fluxo\\fiscal.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8CC023E5-C059-40D6-A1FC-DF4ED649D0B3}|FluxoDeAtendimento\\FluxoDeAtendimento.csproj|c:\\users\\gustavo.flores\\source\\repos\\fluxodeatendimento\\fluxodeatendimento\\fluxodeatendimento.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{8CC023E5-C059-40D6-A1FC-DF4ED649D0B3}|FluxoDeAtendimento\\FluxoDeAtendimento.csproj|solutionrelative:fluxodeatendimento\\fluxodeatendimento.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{8CC023E5-C059-40D6-A1FC-DF4ED649D0B3}|FluxoDeAtendimento\\Fluxo De Atendimento.csproj|c:\\users\\gustavo.flores\\source\\repos\\fluxodeatendimento\\fluxodeatendimento\\fluxo\\cadastros.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8CC023E5-C059-40D6-A1FC-DF4ED649D0B3}|FluxoDeAtendimento\\Fluxo De Atendimento.csproj|solutionrelative:fluxodeatendimento\\fluxo\\cadastros.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8CC023E5-C059-40D6-A1FC-DF4ED649D0B3}|FluxoDeAtendimento\\FluxoDeAtendimento.csproj|c:\\users\\gustavo.flores\\source\\repos\\fluxodeatendimento\\fluxodeatendimento\\fluxo\\setorfinanceiro.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8CC023E5-C059-40D6-A1FC-DF4ED649D0B3}|FluxoDeAtendimento\\FluxoDeAtendimento.csproj|solutionrelative:fluxodeatendimento\\fluxo\\setorfinanceiro.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{8CC023E5-C059-40D6-A1FC-DF4ED649D0B3}|FluxoDeAtendimento\\Fluxo De Atendimento.csproj|c:\\users\\gustavo.flores\\source\\repos\\fluxodeatendimento\\fluxodeatendimento\\fluxo\\cadastrosprodutos.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8CC023E5-C059-40D6-A1FC-DF4ED649D0B3}|FluxoDeAtendimento\\Fluxo De Atendimento.csproj|solutionrelative:fluxodeatendimento\\fluxo\\cadastrosprodutos.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8CC023E5-C059-40D6-A1FC-DF4ED649D0B3}|FluxoDeAtendimento\\FluxoDeAtendimento.csproj|c:\\users\\gustavo.flores\\source\\repos\\fluxodeatendimento\\fluxodeatendimento\\fluxo\\cadastros.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8CC023E5-C059-40D6-A1FC-DF4ED649D0B3}|FluxoDeAtendimento\\FluxoDeAtendimento.csproj|solutionrelative:fluxodeatendimento\\fluxo\\cadastros.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{8CC023E5-C059-40D6-A1FC-DF4ED649D0B3}|FluxoDeAtendimento\\Fluxo De Atendimento.csproj|c:\\users\\gustavo.flores\\source\\repos\\fluxodeatendimento\\fluxodeatendimento\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8CC023E5-C059-40D6-A1FC-DF4ED649D0B3}|FluxoDeAtendimento\\Fluxo De Atendimento.csproj|solutionrelative:fluxodeatendimento\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8CC023E5-C059-40D6-A1FC-DF4ED649D0B3}|FluxoDeAtendimento\\FluxoDeAtendimento.csproj|c:\\users\\gustavo.flores\\source\\repos\\fluxodeatendimento\\fluxodeatendimento\\fluxo\\financeiro.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8CC023E5-C059-40D6-A1FC-DF4ED649D0B3}|FluxoDeAtendimento\\FluxoDeAtendimento.csproj|solutionrelative:fluxodeatendimento\\fluxo\\financeiro.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{8CC023E5-C059-40D6-A1FC-DF4ED649D0B3}|FluxoDeAtendimento\\Fluxo De Atendimento.csproj|c:\\users\\gustavo.flores\\source\\repos\\fluxodeatendimento\\fluxodeatendimento\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8CC023E5-C059-40D6-A1FC-DF4ED649D0B3}|FluxoDeAtendimento\\Fluxo De Atendimento.csproj|solutionrelative:fluxodeatendimento\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8CC023E5-C059-40D6-A1FC-DF4ED649D0B3}|FluxoDeAtendimento\\FluxoDeAtendimento.csproj|c:\\users\\gustavo.flores\\source\\repos\\fluxodeatendimento\\fluxodeatendimento\\fluxo\\finalizacao.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8CC023E5-C059-40D6-A1FC-DF4ED649D0B3}|FluxoDeAtendimento\\FluxoDeAtendimento.csproj|solutionrelative:fluxodeatendimento\\fluxo\\finalizacao.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{8CC023E5-C059-40D6-A1FC-DF4ED649D0B3}|FluxoDeAtendimento\\Fluxo De Atendimento.csproj|c:\\users\\gustavo.flores\\source\\repos\\fluxodeatendimento\\fluxodeatendimento\\pages\\_host.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8CC023E5-C059-40D6-A1FC-DF4ED649D0B3}|FluxoDeAtendimento\\Fluxo De Atendimento.csproj|solutionrelative:fluxodeatendimento\\pages\\_host.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8CC023E5-C059-40D6-A1FC-DF4ED649D0B3}|FluxoDeAtendimento\\FluxoDeAtendimento.csproj|c:\\users\\gustavo.flores\\source\\repos\\fluxodeatendimento\\fluxodeatendimento\\fluxo\\cadastrospessoas.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8CC023E5-C059-40D6-A1FC-DF4ED649D0B3}|FluxoDeAtendimento\\FluxoDeAtendimento.csproj|solutionrelative:fluxodeatendimento\\fluxo\\cadastrospessoas.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{8CC023E5-C059-40D6-A1FC-DF4ED649D0B3}|FluxoDeAtendimento\\Fluxo De Atendimento.csproj|c:\\users\\gustavo.flores\\source\\repos\\fluxodeatendimento\\fluxodeatendimento\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8CC023E5-C059-40D6-A1FC-DF4ED649D0B3}|FluxoDeAtendimento\\Fluxo De Atendimento.csproj|solutionrelative:fluxodeatendimento\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8CC023E5-C059-40D6-A1FC-DF4ED649D0B3}|FluxoDeAtendimento\\FluxoDeAtendimento.csproj|c:\\users\\gustavo.flores\\source\\repos\\fluxodeatendimento\\fluxodeatendimento\\fluxo\\identificacao.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8CC023E5-C059-40D6-A1FC-DF4ED649D0B3}|FluxoDeAtendimento\\FluxoDeAtendimento.csproj|solutionrelative:fluxodeatendimento\\fluxo\\identificacao.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8CC023E5-C059-40D6-A1FC-DF4ED649D0B3}|FluxoDeAtendimento\\FluxoDeAtendimento.csproj|c:\\users\\gustavo.flores\\source\\repos\\fluxodeatendimento\\fluxodeatendimento\\fluxo\\cadastrosprodutos.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8CC023E5-C059-40D6-A1FC-DF4ED649D0B3}|FluxoDeAtendimento\\FluxoDeAtendimento.csproj|solutionrelative:fluxodeatendimento\\fluxo\\cadastrosprodutos.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8CC023E5-C059-40D6-A1FC-DF4ED649D0B3}|FluxoDeAtendimento\\FluxoDeAtendimento.csproj|c:\\users\\gustavo.flores\\source\\repos\\fluxodeatendimento\\fluxodeatendimento\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8CC023E5-C059-40D6-A1FC-DF4ED649D0B3}|FluxoDeAtendimento\\FluxoDeAtendimento.csproj|solutionrelative:fluxodeatendimento\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8CC023E5-C059-40D6-A1FC-DF4ED649D0B3}|FluxoDeAtendimento\\FluxoDeAtendimento.csproj|c:\\users\\gustavo.flores\\source\\repos\\fluxodeatendimento\\fluxodeatendimento\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{8CC023E5-C059-40D6-A1FC-DF4ED649D0B3}|FluxoDeAtendimento\\FluxoDeAtendimento.csproj|solutionrelative:fluxodeatendimento\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8CC023E5-C059-40D6-A1FC-DF4ED649D0B3}|FluxoDeAtendimento\\FluxoDeAtendimento.csproj|c:\\users\\gustavo.flores\\source\\repos\\fluxodeatendimento\\fluxodeatendimento\\fluxo\\fiscal.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8CC023E5-C059-40D6-A1FC-DF4ED649D0B3}|FluxoDeAtendimento\\FluxoDeAtendimento.csproj|solutionrelative:fluxodeatendimento\\fluxo\\fiscal.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8CC023E5-C059-40D6-A1FC-DF4ED649D0B3}|FluxoDeAtendimento\\FluxoDeAtendimento.csproj|c:\\users\\gustavo.flores\\source\\repos\\fluxodeatendimento\\fluxodeatendimento\\pages\\error.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8CC023E5-C059-40D6-A1FC-DF4ED649D0B3}|FluxoDeAtendimento\\FluxoDeAtendimento.csproj|solutionrelative:fluxodeatendimento\\pages\\error.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8CC023E5-C059-40D6-A1FC-DF4ED649D0B3}|FluxoDeAtendimento\\FluxoDeAtendimento.csproj|c:\\users\\gustavo.flores\\source\\repos\\fluxodeatendimento\\fluxodeatendimento\\pages\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8CC023E5-C059-40D6-A1FC-DF4ED649D0B3}|FluxoDeAtendimento\\FluxoDeAtendimento.csproj|solutionrelative:fluxodeatendimento\\pages\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8CC023E5-C059-40D6-A1FC-DF4ED649D0B3}|FluxoDeAtendimento\\FluxoDeAtendimento.csproj|c:\\users\\gustavo.flores\\source\\repos\\fluxodeatendimento\\fluxodeatendimento\\repositories\\contatorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8CC023E5-C059-40D6-A1FC-DF4ED649D0B3}|FluxoDeAtendimento\\FluxoDeAtendimento.csproj|solutionrelative:fluxodeatendimento\\repositories\\contatorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8CC023E5-C059-40D6-A1FC-DF4ED649D0B3}|FluxoDeAtendimento\\FluxoDeAtendimento.csproj|c:\\users\\gustavo.flores\\source\\repos\\fluxodeatendimento\\fluxodeatendimento\\models\\contato.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8CC023E5-C059-40D6-A1FC-DF4ED649D0B3}|FluxoDeAtendimento\\FluxoDeAtendimento.csproj|solutionrelative:fluxodeatendimento\\models\\contato.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8CC023E5-C059-40D6-A1FC-DF4ED649D0B3}|FluxoDeAtendimento\\FluxoDeAtendimento.csproj|c:\\users\\gustavo.flores\\source\\repos\\fluxodeatendimento\\fluxodeatendimento\\pages\\_host.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8CC023E5-C059-40D6-A1FC-DF4ED649D0B3}|FluxoDeAtendimento\\FluxoDeAtendimento.csproj|solutionrelative:fluxodeatendimento\\pages\\_host.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{8CC023E5-C059-40D6-A1FC-DF4ED649D0B3}|FluxoDeAtendimento\\Fluxo De Atendimento.csproj|c:\\users\\gustavo.flores\\source\\repos\\fluxodeatendimento\\fluxodeatendimento\\fluxo\\suporte.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8CC023E5-C059-40D6-A1FC-DF4ED649D0B3}|FluxoDeAtendimento\\Fluxo De Atendimento.csproj|solutionrelative:fluxodeatendimento\\fluxo\\suporte.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -91,234 +55,136 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": ".gitignore",
-              "DocumentMoniker": "C:\\Users\\gustavo.flores\\source\\repos\\FluxoDeAtendimento\\FluxoDeAtendimento\\.gitignore",
-              "RelativeDocumentMoniker": "FluxoDeAtendimento\\.gitignore",
-              "ToolTip": "C:\\Users\\gustavo.flores\\source\\repos\\FluxoDeAtendimento\\FluxoDeAtendimento\\.gitignore",
-              "RelativeToolTip": "FluxoDeAtendimento\\.gitignore",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-10-28T15:29:16.28Z",
+              "Title": "README.md",
+              "DocumentMoniker": "C:\\Users\\gustavo.flores\\source\\repos\\FluxoDeAtendimento\\FluxoDeAtendimento\\README.md",
+              "RelativeDocumentMoniker": "FluxoDeAtendimento\\README.md",
+              "ToolTip": "C:\\Users\\gustavo.flores\\source\\repos\\FluxoDeAtendimento\\FluxoDeAtendimento\\README.md",
+              "RelativeToolTip": "FluxoDeAtendimento\\README.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-10-28T21:29:22.996Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FluxoDeAtendimento.csproj",
-              "DocumentMoniker": "C:\\Users\\gustavo.flores\\source\\repos\\FluxoDeAtendimento\\FluxoDeAtendimento\\FluxoDeAtendimento.csproj",
-              "RelativeDocumentMoniker": "FluxoDeAtendimento\\FluxoDeAtendimento.csproj",
-              "ToolTip": "C:\\Users\\gustavo.flores\\source\\repos\\FluxoDeAtendimento\\FluxoDeAtendimento\\FluxoDeAtendimento.csproj",
-              "RelativeToolTip": "FluxoDeAtendimento\\FluxoDeAtendimento.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-28T15:26:58.844Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\gustavo.flores\\source\\repos\\FluxoDeAtendimento\\FluxoDeAtendimento\\appsettings.json",
-              "RelativeDocumentMoniker": "FluxoDeAtendimento\\appsettings.json",
-              "ToolTip": "C:\\Users\\gustavo.flores\\source\\repos\\FluxoDeAtendimento\\FluxoDeAtendimento\\appsettings.json",
-              "RelativeToolTip": "FluxoDeAtendimento\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-28T15:26:45.019Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\gustavo.flores\\source\\repos\\FluxoDeAtendimento\\FluxoDeAtendimento\\Program.cs",
-              "RelativeDocumentMoniker": "FluxoDeAtendimento\\Program.cs",
-              "ToolTip": "C:\\Users\\gustavo.flores\\source\\repos\\FluxoDeAtendimento\\FluxoDeAtendimento\\Program.cs",
-              "RelativeToolTip": "FluxoDeAtendimento\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T15:26:41.476Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Financeiro.razor",
-              "DocumentMoniker": "C:\\Users\\gustavo.flores\\source\\repos\\FluxoDeAtendimento\\FluxoDeAtendimento\\Fluxo\\Financeiro.razor",
-              "RelativeDocumentMoniker": "FluxoDeAtendimento\\Fluxo\\Financeiro.razor",
-              "ToolTip": "C:\\Users\\gustavo.flores\\source\\repos\\FluxoDeAtendimento\\FluxoDeAtendimento\\Fluxo\\Financeiro.razor",
-              "RelativeToolTip": "FluxoDeAtendimento\\Fluxo\\Financeiro.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-28T13:49:32.583Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Index.razor",
-              "DocumentMoniker": "C:\\Users\\gustavo.flores\\source\\repos\\FluxoDeAtendimento\\FluxoDeAtendimento\\Pages\\Index.razor",
-              "RelativeDocumentMoniker": "FluxoDeAtendimento\\Pages\\Index.razor",
-              "ToolTip": "C:\\Users\\gustavo.flores\\source\\repos\\FluxoDeAtendimento\\FluxoDeAtendimento\\Pages\\Index.razor",
-              "RelativeToolTip": "FluxoDeAtendimento\\Pages\\Index.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-28T13:12:50.281Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Identificacao.razor",
-              "DocumentMoniker": "C:\\Users\\gustavo.flores\\source\\repos\\FluxoDeAtendimento\\FluxoDeAtendimento\\Fluxo\\Identificacao.razor",
-              "RelativeDocumentMoniker": "FluxoDeAtendimento\\Fluxo\\Identificacao.razor",
-              "ToolTip": "C:\\Users\\gustavo.flores\\source\\repos\\FluxoDeAtendimento\\FluxoDeAtendimento\\Fluxo\\Identificacao.razor",
-              "RelativeToolTip": "FluxoDeAtendimento\\Fluxo\\Identificacao.razor",
-              "ViewState": "AgIAADYAAAAAAAAAAAAAAEQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-28T13:12:17.72Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Fiscal.razor",
-              "DocumentMoniker": "C:\\Users\\gustavo.flores\\source\\repos\\FluxoDeAtendimento\\FluxoDeAtendimento\\Fluxo\\Fiscal.razor",
-              "RelativeDocumentMoniker": "FluxoDeAtendimento\\Fluxo\\Fiscal.razor",
-              "ToolTip": "C:\\Users\\gustavo.flores\\source\\repos\\FluxoDeAtendimento\\FluxoDeAtendimento\\Fluxo\\Fiscal.razor",
-              "RelativeToolTip": "FluxoDeAtendimento\\Fluxo\\Fiscal.razor",
-              "ViewState": "AgIAABoAAAAAAAAAAAAmwC0AAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-28T13:12:10.903Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "SetorFinanceiro.razor",
-              "DocumentMoniker": "C:\\Users\\gustavo.flores\\source\\repos\\FluxoDeAtendimento\\FluxoDeAtendimento\\Fluxo\\SetorFinanceiro.razor",
-              "RelativeDocumentMoniker": "FluxoDeAtendimento\\Fluxo\\SetorFinanceiro.razor",
-              "ToolTip": "C:\\Users\\gustavo.flores\\source\\repos\\FluxoDeAtendimento\\FluxoDeAtendimento\\Fluxo\\SetorFinanceiro.razor",
-              "RelativeToolTip": "FluxoDeAtendimento\\Fluxo\\SetorFinanceiro.razor",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAACgAAABbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-28T13:12:04.975Z"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "Finalizacao.razor",
-              "DocumentMoniker": "C:\\Users\\gustavo.flores\\source\\repos\\FluxoDeAtendimento\\FluxoDeAtendimento\\Fluxo\\Finalizacao.razor",
-              "RelativeDocumentMoniker": "FluxoDeAtendimento\\Fluxo\\Finalizacao.razor",
-              "ToolTip": "C:\\Users\\gustavo.flores\\source\\repos\\FluxoDeAtendimento\\FluxoDeAtendimento\\Fluxo\\Finalizacao.razor",
-              "RelativeToolTip": "FluxoDeAtendimento\\Fluxo\\Finalizacao.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-28T13:12:00.307Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Error.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\gustavo.flores\\source\\repos\\FluxoDeAtendimento\\FluxoDeAtendimento\\Pages\\Error.cshtml.cs",
-              "RelativeDocumentMoniker": "FluxoDeAtendimento\\Pages\\Error.cshtml.cs",
-              "ToolTip": "C:\\Users\\gustavo.flores\\source\\repos\\FluxoDeAtendimento\\FluxoDeAtendimento\\Pages\\Error.cshtml.cs",
-              "RelativeToolTip": "FluxoDeAtendimento\\Pages\\Error.cshtml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T13:11:57.636Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Error.cshtml",
-              "DocumentMoniker": "C:\\Users\\gustavo.flores\\source\\repos\\FluxoDeAtendimento\\FluxoDeAtendimento\\Pages\\Error.cshtml",
-              "RelativeDocumentMoniker": "FluxoDeAtendimento\\Pages\\Error.cshtml",
-              "ToolTip": "C:\\Users\\gustavo.flores\\source\\repos\\FluxoDeAtendimento\\FluxoDeAtendimento\\Pages\\Error.cshtml",
-              "RelativeToolTip": "FluxoDeAtendimento\\Pages\\Error.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-28T13:11:55.38Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "ContatoRepository.cs",
-              "DocumentMoniker": "C:\\Users\\gustavo.flores\\source\\repos\\FluxoDeAtendimento\\FluxoDeAtendimento\\Repositories\\ContatoRepository.cs",
-              "RelativeDocumentMoniker": "FluxoDeAtendimento\\Repositories\\ContatoRepository.cs",
-              "ToolTip": "C:\\Users\\gustavo.flores\\source\\repos\\FluxoDeAtendimento\\FluxoDeAtendimento\\Repositories\\ContatoRepository.cs",
-              "RelativeToolTip": "FluxoDeAtendimento\\Repositories\\ContatoRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T13:11:52.339Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Contato.cs",
-              "DocumentMoniker": "C:\\Users\\gustavo.flores\\source\\repos\\FluxoDeAtendimento\\FluxoDeAtendimento\\Models\\Contato.cs",
-              "RelativeDocumentMoniker": "FluxoDeAtendimento\\Models\\Contato.cs",
-              "ToolTip": "C:\\Users\\gustavo.flores\\source\\repos\\FluxoDeAtendimento\\FluxoDeAtendimento\\Models\\Contato.cs",
-              "RelativeToolTip": "FluxoDeAtendimento\\Models\\Contato.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T13:11:48.8Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "CadastrosProdutos.razor",
-              "DocumentMoniker": "C:\\Users\\gustavo.flores\\source\\repos\\FluxoDeAtendimento\\FluxoDeAtendimento\\Fluxo\\CadastrosProdutos.razor",
-              "RelativeDocumentMoniker": "FluxoDeAtendimento\\Fluxo\\CadastrosProdutos.razor",
-              "ToolTip": "C:\\Users\\gustavo.flores\\source\\repos\\FluxoDeAtendimento\\FluxoDeAtendimento\\Fluxo\\CadastrosProdutos.razor",
-              "RelativeToolTip": "FluxoDeAtendimento\\Fluxo\\CadastrosProdutos.razor",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAcwBgAAABOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-28T13:11:44.736Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "CadastrosPessoas.razor",
-              "DocumentMoniker": "C:\\Users\\gustavo.flores\\source\\repos\\FluxoDeAtendimento\\FluxoDeAtendimento\\Fluxo\\CadastrosPessoas.razor",
-              "RelativeDocumentMoniker": "FluxoDeAtendimento\\Fluxo\\CadastrosPessoas.razor",
-              "ToolTip": "C:\\Users\\gustavo.flores\\source\\repos\\FluxoDeAtendimento\\FluxoDeAtendimento\\Fluxo\\CadastrosPessoas.razor",
-              "RelativeToolTip": "FluxoDeAtendimento\\Fluxo\\CadastrosPessoas.razor",
-              "ViewState": "AgIAADEAAAAAAAAAAAAAAEQAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-28T13:11:41.016Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Cadastros.razor",
-              "DocumentMoniker": "C:\\Users\\gustavo.flores\\source\\repos\\FluxoDeAtendimento\\FluxoDeAtendimento\\Fluxo\\Cadastros.razor",
-              "RelativeDocumentMoniker": "FluxoDeAtendimento\\Fluxo\\Cadastros.razor",
-              "ToolTip": "C:\\Users\\gustavo.flores\\source\\repos\\FluxoDeAtendimento\\FluxoDeAtendimento\\Fluxo\\Cadastros.razor",
-              "RelativeToolTip": "FluxoDeAtendimento\\Fluxo\\Cadastros.razor",
-              "ViewState": "AgIAACAAAAAAAAAAAAAAACYAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-28T13:11:36.445Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "site.css",
-              "DocumentMoniker": "C:\\Users\\gustavo.flores\\source\\repos\\FluxoDeAtendimento\\FluxoDeAtendimento\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "FluxoDeAtendimento\\wwwroot\\css\\site.css",
-              "ToolTip": "C:\\Users\\gustavo.flores\\source\\repos\\FluxoDeAtendimento\\FluxoDeAtendimento\\wwwroot\\css\\site.css",
-              "RelativeToolTip": "FluxoDeAtendimento\\wwwroot\\css\\site.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-10-28T12:51:20.186Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
               "Title": "_Host.cshtml",
               "DocumentMoniker": "C:\\Users\\gustavo.flores\\source\\repos\\FluxoDeAtendimento\\FluxoDeAtendimento\\Pages\\_Host.cshtml",
               "RelativeDocumentMoniker": "FluxoDeAtendimento\\Pages\\_Host.cshtml",
               "ToolTip": "C:\\Users\\gustavo.flores\\source\\repos\\FluxoDeAtendimento\\FluxoDeAtendimento\\Pages\\_Host.cshtml",
               "RelativeToolTip": "FluxoDeAtendimento\\Pages\\_Host.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-28T12:50:59.802Z"
+              "WhenOpened": "2025-10-28T21:12:02.723Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "App.razor",
+              "DocumentMoniker": "C:\\Users\\gustavo.flores\\source\\repos\\FluxoDeAtendimento\\FluxoDeAtendimento\\App.razor",
+              "RelativeDocumentMoniker": "FluxoDeAtendimento\\App.razor",
+              "ToolTip": "C:\\Users\\gustavo.flores\\source\\repos\\FluxoDeAtendimento\\FluxoDeAtendimento\\App.razor",
+              "RelativeToolTip": "FluxoDeAtendimento\\App.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-28T21:11:52.121Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "C:\\Users\\gustavo.flores\\source\\repos\\FluxoDeAtendimento\\FluxoDeAtendimento\\_Imports.razor",
+              "RelativeDocumentMoniker": "FluxoDeAtendimento\\_Imports.razor",
+              "ToolTip": "C:\\Users\\gustavo.flores\\source\\repos\\FluxoDeAtendimento\\FluxoDeAtendimento\\_Imports.razor",
+              "RelativeToolTip": "FluxoDeAtendimento\\_Imports.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-28T21:11:27.016Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CadastrosProdutos.razor",
+              "DocumentMoniker": "C:\\Users\\gustavo.flores\\source\\repos\\FluxoDeAtendimento\\FluxoDeAtendimento\\Fluxo\\CadastrosProdutos.razor",
+              "RelativeDocumentMoniker": "FluxoDeAtendimento\\Fluxo\\CadastrosProdutos.razor",
+              "ToolTip": "C:\\Users\\gustavo.flores\\source\\repos\\FluxoDeAtendimento\\FluxoDeAtendimento\\Fluxo\\CadastrosProdutos.razor",
+              "RelativeToolTip": "FluxoDeAtendimento\\Fluxo\\CadastrosProdutos.razor",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAowH8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-28T19:44:50.999Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Cadastros.razor",
+              "DocumentMoniker": "C:\\Users\\gustavo.flores\\source\\repos\\FluxoDeAtendimento\\FluxoDeAtendimento\\Fluxo\\Cadastros.razor",
+              "RelativeDocumentMoniker": "FluxoDeAtendimento\\Fluxo\\Cadastros.razor",
+              "ToolTip": "C:\\Users\\gustavo.flores\\source\\repos\\FluxoDeAtendimento\\FluxoDeAtendimento\\Fluxo\\Cadastros.razor",
+              "RelativeToolTip": "FluxoDeAtendimento\\Fluxo\\Cadastros.razor",
+              "ViewState": "AgIAABwAAAAAAAAAAAAowD0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-28T19:44:16.202Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\gustavo.flores\\source\\repos\\FluxoDeAtendimento\\FluxoDeAtendimento\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "FluxoDeAtendimento\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\gustavo.flores\\source\\repos\\FluxoDeAtendimento\\FluxoDeAtendimento\\Properties\\launchSettings.json",
+              "RelativeToolTip": "FluxoDeAtendimento\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-28T19:12:56.161Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Suporte.razor",
+              "DocumentMoniker": "C:\\Users\\gustavo.flores\\source\\repos\\FluxoDeAtendimento\\FluxoDeAtendimento\\Fluxo\\Suporte.razor",
+              "RelativeDocumentMoniker": "FluxoDeAtendimento\\Fluxo\\Suporte.razor",
+              "ToolTip": "C:\\Users\\gustavo.flores\\source\\repos\\FluxoDeAtendimento\\FluxoDeAtendimento\\Fluxo\\Suporte.razor",
+              "RelativeToolTip": "FluxoDeAtendimento\\Fluxo\\Suporte.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-28T19:03:28.494Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Identificacao.razor",
+              "DocumentMoniker": "C:\\Users\\gustavo.flores\\source\\repos\\FluxoDeAtendimento\\FluxoDeAtendimento\\Fluxo\\Identificacao.razor",
+              "RelativeDocumentMoniker": "FluxoDeAtendimento\\Fluxo\\Identificacao.razor",
+              "ToolTip": "C:\\Users\\gustavo.flores\\source\\repos\\FluxoDeAtendimento\\FluxoDeAtendimento\\Fluxo\\Identificacao.razor",
+              "RelativeToolTip": "FluxoDeAtendimento\\Fluxo\\Identificacao.razor",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAowE8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-28T13:12:17.72Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Fiscal.razor",
+              "DocumentMoniker": "C:\\Users\\gustavo.flores\\source\\repos\\FluxoDeAtendimento\\FluxoDeAtendimento\\Fluxo\\Fiscal.razor",
+              "RelativeDocumentMoniker": "FluxoDeAtendimento\\Fluxo\\Fiscal.razor",
+              "ToolTip": "C:\\Users\\gustavo.flores\\source\\repos\\FluxoDeAtendimento\\FluxoDeAtendimento\\Fluxo\\Fiscal.razor",
+              "RelativeToolTip": "FluxoDeAtendimento\\Fluxo\\Fiscal.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-28T13:12:10.903Z",
+              "EditorCaption": ""
             }
           ]
         }
