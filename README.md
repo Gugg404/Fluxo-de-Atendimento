@@ -1,7 +1,7 @@
 # FluxoDeAtendimento
 
 Sistema de **Fluxo de Atendimento**, desenvolvido para auxiliar o suporte no acompanhamento e registro de atendimentos de clientes.  
-Permite identificar contatos, guiar o atendente em cada etapa do processo e registrar conclusões de atendimento.
+Permite identificar contatos, guiar o atendente em cada etapa do processo, realizar validações e registrar conclusões de atendimento.
 
 ---
 
