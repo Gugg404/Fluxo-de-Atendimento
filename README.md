@@ -8,9 +8,10 @@ Permite identificar contatos, guiar o atendente em cada etapa do processo, reali
 ## Funcionalidades Principais
 
 - **Identificação de Contato:** registra informações básicas do cliente como nome, usuário, administrador e situação.
-- **Fluxo de Cadastros:** 
+- **Fluxo de Cadastros, e outros módulos:** 
   - Cadastro de Produtos
   - Cadastro de Pessoas
+  - Entre outros..
 - **Sugestões de Mensagem:** fornece mensagens prontas para o atendente enviar ao cliente.
 - **Orientações:** exibe dicas e links da central de ajuda para apoiar o atendente.
 - **Histórico de Etapas:** mantém registro de todas as etapas percorridas pelo contato.
