@@ -35,6 +35,47 @@
     color: white;
     border: none;
 }
+
 textarea {
     resize: both !important;
+}
+
+/* ---------------------------------------------------------------------- */
+/* AJUSTES PARA O MENU LATERAL (SIDEBAR) */
+/* ---------------------------------------------------------------------- */
+
+/* Estilos para a barra lateral (NavMenu) */
+#app .sidebar {
+    /* Degradê Roxo/Azul Escuro do seu mockup */
+    background: linear-gradient( 180deg, #1A1E24 0%, /* Cor Superior */
+    #4A235A 100% /* Cor Inferior (Roxo) */
+    ) !important;
+    color: white; /* Garante que o texto dentro da sidebar seja branco */
+}
+
+/* Garante que os links da sidebar e ícones sejam brancos */
+.sidebar .nav-link,
+.sidebar .nav-link span {
+    color: white !important; /* Sobrescreve a cor padrão do link */
+    padding-left: 1.5rem !important; /* Adiciona espaçamento interno para afastar da borda */
+}
+
+    /* Estilo para o hover e link ativo */
+    .sidebar .nav-link:hover,
+    .sidebar .nav-link:focus,
+    .sidebar .nav-link.active {
+        background-color: rgba(255, 255, 255, 0.15) !important; /* Um destaque suave */
+        border-radius: 0; /* Remove borda, caso exista */
+        color: white !important;
+    }
+
+/* Ajustes gerais (se necessário) */
+body {
+    background-color: #f8f9fa; /* Um fundo levemente cinza para o conteúdo principal */
+}
+
+/* Estilos para o Card de Iniciar Novo Atendimento no Dashboard */
+.card .btn-light {
+    border-radius: 25px; /* Botão mais arredondado */
+    font-size: 1.25rem; /* Tamanho maior para o texto do botão */
 }

@@ -29,7 +29,8 @@ else
         </ul>
     </div>
 
-    <div class="flex gap-3">
+    <div class="d-flex flex-column gap-2 mt-3" style="max-width:200px;">
+        <button class="btn btn-primary" @onclick="IrParaOperacoesFiscais">Operações Fiscais</button>
         <button class="btn btn-primary" @onclick="VoltarSuporte">Voltar para Suporte</button>
     </div>
 
@@ -58,4 +59,9 @@ else
     {
         NavManager.NavigateTo("/fluxo/suporte");
     }
+    private void IrParaOperacoesFiscais()
+    {
+        NavManager.NavigateTo("/fluxo/fiscal/operacoesfiscais");
+    }
+}
 }

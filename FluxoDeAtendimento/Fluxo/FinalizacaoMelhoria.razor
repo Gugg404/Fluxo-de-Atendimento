@@ -1,0 +1,81 @@
+﻿@page "/melhoria/finalizacaomelhoria"
+@inject FluxoDeAtendimento.Repositories.ContatoRepository ContatoRepo
+@inject NavigationManager NavManager
+
+<h3 class="text-2xl font-bold mb-4">Atendimento Finalizado!</h3>
+
+<p><h5>Sugestão de melhoria registrada com sucesso!</h5></p>
+<br>
+<br>
+
+
+@if (contato != null)
+{
+    <div class="bg-gray-50 p-4 rounded border mb-4" style="max-width:600px;">
+        <p><strong>Nome:</strong> @contato.Nome</p>
+        <p><strong>Usuário:</strong> @contato.Usuario</p>
+        <p><strong>Administrador:</strong> @contato.Administrador</p>
+        <p><strong>Situação:</strong> @contato.Situacao</p>
+        <p><strong>• Sugestão de Melhoria</strong></p>
+        <p><strong>Registro da Sugestão:</strong> @contato.SugestaoMelhoria</p><br><br>
+
+        <!-- Sugestão de mensagem -->
+        <div class="bg-green-50 p-4 rounded border border-green-300 mb-4">
+            <h4 class="font-semibold text-green-700 mb-2">💬 Sugestão de mensagem para o cliente</h4>
+            <p>
+                <i>
+                    Prezado(a) @contato.Nome,<br><br>
+
+                    Informamos que sua sugestão de melhoria foi registrada com sucesso em nosso sistema.
+                    Foi gerado um protocolo interno de registro para acompanhamento interno da sugestão,
+                    que será avaliada pela equipe de desenolvimento quanto à possibilidade de implementação.<br><br>
+
+                    O chamado referente a essa sugestão será encerrado, mas sua proposta ficará registrada
+                    internamente para análise futura.<br><br>
+
+                    Ressaltamos que <strong>não realizamos retorno para confirmação de andamento, implementação ou qualquer outro tipo de retorno</strong>.
+                    A melhoria permanece registrada exclusivamente para fins de avaliação interna.<br><br>
+
+                    Agradecemos sua colaboração e sugestão, que nos ajudam a melhorar continuamente nossos serviços.<br><br>
+                </i>
+            </p>
+        </div>
+
+
+        <h4 class="mt-4 mb-2 font-semibold">Etapas percorridas:</h4>
+        <ul class="list-disc pl-6">
+            @foreach (var etapa in historicoEtapas)
+            {
+                <li>@etapa</li>
+            }
+        </ul>
+
+        <p class="mt-4 font-semibold text-green-700">• Finalização do atendimento</p>
+    </div>
+
+    <button class="bg-blue-600 text-white px-4 py-2 rounded" @onclick="VoltarInicio">
+        Voltar ao Início
+    </button>
+
+}
+
+@code {
+    private FluxoDeAtendimento.Models.Contato? contato;
+    private IReadOnlyList<string> historicoEtapas = Array.Empty<string>();
+
+    protected override void OnInitialized()
+    {
+        contato = ContatoRepo.ObterContatoAtual();
+
+        if (contato != null)
+        {
+            historicoEtapas = ContatoRepo.ObterHistorico();
+        }
+    }
+
+    private void VoltarInicio()
+    {
+        ContatoRepo.Limpar();
+        NavManager.NavigateTo("/identificacao");
+    }
+}

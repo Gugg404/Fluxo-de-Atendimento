@@ -5,6 +5,15 @@
 
 <h3 class="text-2xl font-bold mb-4">Identificação de Contato</h3>
 
+<!-- Informação sobre a etapa -->
+<div class="bg-green-50 p-4 rounded border border-green-300 mb-4">
+    <h4 class="font-semibold text-green-700 mb-2"></h4>
+    <p>
+        <i>
+            Preencha as informações do contato e situação:
+        </i>
+    </p>
+</div>
 <EditForm Model="novoContato" OnValidSubmit="SalvarContato">
     <DataAnnotationsValidator />
     <ValidationSummary />
