@@ -17,13 +17,15 @@ else
         <p><strong>Situação:</strong> @contato.Situacao</p>
     </div>
 
-    <p class="mb-3">Escolha o caminho para seguir com o atendimento:</p>
+    <p class="mb-3">Escolha o módulo para seguir com o atendimento:</p>
 
     <div style="display:flex; flex-direction:column; gap:10px; width:200px; margin-top:10px;">
         <button class="btn btn-warning" @onclick="IrParaCadastros">Cadastros</button>
+        <button class="btn btn-warning" @onclick="IrParaEstoque">Estoque</button>
         <button class="btn btn-warning" @onclick="IrParaFiscal">Fiscal</button>
         <button class="btn btn-warging" @onclick="IrParaVendas">Vendas</button>
         <button class="btn btn-primary" @onclick="VoltarIdentificacao">Voltar para Identificação</button>
+
     </div>
 
     <h4 class="mt-6 mb-2 text-lg font-semibold">Histórico de etapas</h4>
@@ -66,5 +68,9 @@ else
     private void VoltarIdentificacao()
     {
         NavManager.NavigateTo("/identificacao");
+    }
+    private void IrParaEstoque()
+    {
+        NavManager.NavigateTo("/fluxo/estoque");
     }
 }

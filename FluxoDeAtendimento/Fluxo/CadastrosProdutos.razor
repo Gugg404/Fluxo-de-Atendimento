@@ -21,17 +21,6 @@ else
         <p><strong>• Cadastros de Produtos</strong></p>
     </div>
 
-    <!-- Campo de Conclusão -->
-    <div class="bg-gray-100 p-4 rounded border mb-4" style="max-width:600px;">
-        <label for="conclusao" class="font-semibold block mb-2">Conclusão:</label>
-    <textarea id="conclusao"
-              class="w-full border rounded p-2 block resize-both overflow-auto align-top"
-              rows="4"
-              placeholder="Digite a conclusão do atendimento..."
-              @bind="conclusao">
-    </textarea>
-
-    </div>
 
     <!-- Orientação ao atendente -->
     <div class="bg-blue-50 p-4 rounded border border-blue-300 mb-4">
@@ -82,6 +71,18 @@ else
         </ul>
     </div>
 
+    <!-- Campo de Conclusão -->
+    <div class="bg-gray-100 p-4 rounded border mb-4" style="max-width:600px;">
+        <label for="conclusao" class="font-semibold block mb-2">Conclusão:</label>
+        <textarea id="conclusao"
+                  class="w-full border rounded p-2 block resize-both overflow-auto align-top"
+                  rows="4"
+                  placeholder="Digite a conclusão do atendimento..."
+                  @bind="conclusao">
+        </textarea>
+
+    </div>
+
     <!-- Botões -->
     <div style="display:flex; flex-direction:column; gap:10px; width:200px; margin-top:10px;">
         <button class="btn btn-primary w-full" @onclick="VoltarCadastros">Voltar para Cadastros</button>
@@ -106,10 +107,10 @@ else
     protected override void OnInitialized()
     {
         contato = ContatoRepo.ObterContatoAtual();
-        if (contato != null)
-        {
-            ContatoRepo.RegistrarEtapa("Entrou em Cadastros - Produtos");
-        }
+        ContatoRepo.DefinirModulo("Cadastros");
+        ContatoRepo.DefinirSubEtapa("Produto");
+
+        ContatoRepo.RegistrarEtapa("Acessou a etapa de Produtos");
     }
 
     private void VoltarCadastros() => NavManager.NavigateTo("/fluxo/cadastros");

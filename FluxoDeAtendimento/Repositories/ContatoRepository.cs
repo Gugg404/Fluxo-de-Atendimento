@@ -4,18 +4,10 @@ namespace FluxoDeAtendimento.Repositories
 {
     public class ContatoRepository
     {
-        private string conclusao = string.Empty;
-
-        public void DefinirConclusao(string texto)
-        {
-            conclusao = texto;
-        }
-
-        public string ObterConclusao() => conclusao;
-
         private Contato? _contatoAtual;
         private readonly List<string> _historicoEtapas = new();
 
+        // Salva o contato atual
         public Task SalvarAsync(Contato contato)
         {
             _contatoAtual = new Contato
@@ -25,30 +17,57 @@ namespace FluxoDeAtendimento.Repositories
                 Usuario = contato.Usuario,
                 Administrador = contato.Administrador,
                 Situacao = contato.Situacao,
+                Modulo = contato.Modulo,
+                Conclusao = contato.Conclusao,
+                SubEtapa = contato.SubEtapa,
             };
             return Task.CompletedTask;
         }
 
-        public Contato? ObterContatoAtual()
+        public Contato? ObterContatoAtual() => _contatoAtual;
+
+
+        // ===
+        // : Define o módulo atual ===
+        public void DefinirModulo(string modulo)
         {
-            return _contatoAtual;
+            if (_contatoAtual == null)
+                _contatoAtual = new Contato();
+
+            _contatoAtual.Modulo = modulo;
+            RegistrarEtapa($"Entrou no módulo {modulo}");
         }
 
+        public void DefinirSubEtapa(string subetapa)
+        { 
+            if (_contatoAtual == null)
+                _contatoAtual = new Contato();
+
+            _contatoAtual.SubEtapa = subetapa;
+            RegistrarEtapa($"Entrou na etapa {subetapa}");
+        }
+
+
+        // === Conclusão agora salva no contato ===
+        public void DefinirConclusao(string texto)
+        {
+            if (_contatoAtual == null)
+                _contatoAtual = new Contato();
+
+            _contatoAtual.Conclusao = texto;
+            RegistrarEtapa("Conclusão definida");
+        }
+
+        public string ObterConclusao() => _contatoAtual?.Conclusao ?? string.Empty;
+
+        // === Histórico de etapas ===
         public void RegistrarEtapa(string etapa)
         {
-            _historicoEtapas.Add($"{DateTime.Now:HH:mm:ss} - {etapa}");
+            if (!string.IsNullOrWhiteSpace(etapa))
+                _historicoEtapas.Add($"{DateTime.Now:HH:mm:ss} - {etapa}");
         }
 
-        public IReadOnlyList<string> ObterHistorico()
-        {
-            return _historicoEtapas.AsReadOnly();
-        }
-
-        public void Limpar()
-        {
-            _contatoAtual = null;
-            _historicoEtapas.Clear();
-        }
+        public IReadOnlyList<string> ObterHistorico() => _historicoEtapas.AsReadOnly();
 
         public void AtualizarContato(Contato contato)
         {
@@ -57,6 +76,12 @@ namespace FluxoDeAtendimento.Repositories
                 _contatoAtual = contato;
                 RegistrarEtapa("Contato atualizado");
             }
+        }
+
+        public void Limpar()
+        {
+            _contatoAtual = null;
+            _historicoEtapas.Clear();
         }
 
     }

@@ -1,0 +1,122 @@
+﻿@page "/fluxo/fiscal/operacoesfiscais"
+@inject FluxoDeAtendimento.Repositories.ContatoRepository ContatoRepo
+@inject NavigationManager NavManager
+
+<h3 class="text-2xl font-bold mb-4">Fluxo - Validação de Operações Fiscais</h3>
+
+@{
+    var contato = ContatoRepo.ObterContatoAtual();
+}
+
+@if (contato is null)
+{
+    <p>Nenhum contato identificado. <a href="/identificacao">Clique aqui</a> para começar novamente.</p>
+}
+else
+{
+    <div class="bg-gray-50 p-4 rounded border mb-4" style="max-width:600px;">
+        <p><strong>Nome:</strong> @contato.Nome</p>
+        <p><strong>Usuário:</strong> @contato.Usuario</p>
+        <p><strong>Situação:</strong> @contato.Situacao</p>
+        <p><strong>Módulo: Fiscal</strong></p>
+        <p><strong>• Operações Fiscais</strong></p>
+    </div>
+
+    <div class="bg-blue-50 p-4 rounded border border-blue-300 mb-4">
+        <h4 class="font-semibold text-blue-700 mb-2">💡 Orientação: Erro ao Puxar Operação Fiscal (NF-e/NFC-e)</h4>
+        <p>
+            O processo de definição da Operação Fiscal (OF) para vendas (Direta ou PDV) no SIGE Cloud segue uma cadeia de dependências rigorosa. O sistema precisa garantir que o <strong>contexto da venda</strong> (Categoria, Produto e Cliente) se encaixe perfeitamente nas <strong>regras da Operação Fiscal cadastrada.</strong>
+        </p>
+        <p>
+            O principal ponto de falha é a falta de amarração (vínculo) entre o Produto (via Grupo Tributário) e a Operação Fiscal, ou a falta de Categoria de Venda para guiar a busca da OF.
+        </p>
+        <p>
+            Abaixo, siga o checklist para identificar exatamente qual cadastro está ausente ou incorreto, levando ao erro na emissão da nota.
+        </p>
+    </div>
+
+    <h4 class="text-xl font-bold mt-6 mb-3">🛠️ Checklist de Validação Fiscal (Siga a Ordem)</h4>
+
+    <ul class="list-group mb-5" style="max-width: 800px;">
+
+        <li class="list-group-item d-flex flex-column align-items-start">
+            <p class="mb-1"><strong>1. Categoria de Venda (Prioridade na Venda Direta)</strong></p>
+            <small>Verifique se foi informada uma Categoria de Venda. Se não houver, o sistema buscará por padrão a OF com o nome "Venda de Mercadorias e Serviços".</small>
+
+            <div class="mt-3">
+                <p class="font-semibold text-sm mb-1">Exemplo:</p>
+                <img src="categorianavenda.png" alt="Exemplo de Categoria de Venda no SIGE Cloud" class="img-fluid border rounded" style="max-width: 800px;" />
+            </div>
+        </li>
+
+        <li class="list-group-item d-flex flex-column align-items-start">
+            <p class="mb-1"><strong>2. Correspondência da Operação Fiscal (OF)</strong></p>
+            <small><strong>Regra:</strong> Existe uma Operação Fiscal cadastrada cujo nome seja exatamente igual à Categoria de Venda utilizada no passo 1?</small>
+            <small class="text-danger mt-1">Se a Categoria for "Venda Externa" e não houver uma OF com esse nome, a OF não será puxada.</small>
+        </li>
+
+        <li class="list-group-item d-flex flex-column align-items-start">
+            <p class="mb-1"><strong>3. Grupo Tributário no Cadastro do Produto</strong></p>
+            <small><strong>Ação:</strong> Acesse o cadastro do produto que está na venda. <br> <strong>Regra:</strong> O produto possui um Grupo Tributário (GT) cadastrado e informado?</small>
+
+            <div class="mt-3">
+                <p class="font-semibold text-sm mb-1">Localização do Grupo Tributário no Produto:</p>
+                <img src="grupotproduto.png" alt="Exemplo de Grupo Tributário no Produto" class="img-fluid border rounded" style="max-width: 800px;" />
+            </div>
+        </li>
+
+        <li class="list-group-item d-flex flex-column align-items-start">
+            <p class="mb-1"><strong>4. Vínculo do Grupo Tributário na Operação Fiscal</strong></p>
+            <small><strong>Ação:</strong> Acesse a Operação Fiscal identificada no Passo 2. <br> <strong>Regra:</strong> O Grupo Tributário do produto (Passo 3) está **incluído** dentro da Operação Fiscal?</small>
+            <img src="dentrodaof.png" alt="Exemplo de Grupo Tributário na Operação Fiscal" class="img-fluid border rounded" style="max-width: 800px;" />
+        </li>
+
+        <li class="list-group-item d-flex flex-column align-items-start">
+            <p class="mb-1"><strong>5. Validação de Estado (UF do Cliente)</strong></p>
+            <small><strong>Ação:</strong> Compare o Estado (UF) do Cliente (informado na venda) com o(s) Estado(s) cadastrado(s) na Operação Fiscal. <br> <strong>Regra:</strong> A Operação Fiscal permite a emissão para o Estado do cliente?</small>
+        </li>
+    </ul>
+        <!-- Campo de Conclusão -->
+    <div class="bg-gray-100 p-4 rounded border mb-4" style="max-width:600px;">
+        <label for="conclusao" class="font-semibold block mb-2">Conclusão:</label>
+        <textarea id="conclusao"
+                  class="w-full border rounded p-2 block resize-both overflow-auto align-top"
+                  rows="4"
+                  placeholder="Digite a conclusão do atendimento..."
+                  @bind="conclusao">
+        </textarea>
+
+    </div>
+
+    <div class="d-flex flex-column gap-2 mt-3" style="max-width:200px;">
+        <button class="btn btn-warning mt-3" @onclick="VoltarParaFiscal">Voltar para Fiscal</button>
+        <button class="btn btn-primary" @onclick="FinalizarAtendimento">Finalizar</button>
+        </div>
+}
+
+@code {
+    protected override void OnInitialized()
+    {
+        contato = ContatoRepo.ObterContatoAtual();
+        ContatoRepo.DefinirModulo("Fiscal");
+        ContatoRepo.DefinirSubEtapa("Operações Fiscais");
+        ContatoRepo.RegistrarEtapa("Acessou a etapa de Operações Fiscais");
+    }
+    private FluxoDeAtendimento.Models.Contato? contato;
+    private string conclusao = string.Empty;
+    private void VoltarParaFiscal()
+    {
+        NavManager.NavigateTo("/fluxo/fiscal");
+    }
+
+    private void FinalizarAtendimento()
+    {
+        if (!string.IsNullOrWhiteSpace(conclusao))
+        {
+            ContatoRepo.DefinirConclusao(conclusao);
+            ContatoRepo.RegistrarEtapa($"Conclusão: {conclusao}");
+        }
+
+        NavManager.NavigateTo("/fluxo/finalizacao");
+    }
+}

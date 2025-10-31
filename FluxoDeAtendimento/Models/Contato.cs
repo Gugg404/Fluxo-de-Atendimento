@@ -17,7 +17,17 @@ namespace FluxoDeAtendimento.Models
 
         public string Conclusao { get; set; } = string.Empty;
 
+        public string SubEtapa { get; set; } = string.Empty;
+
+        public string SugestaoMelhoria { get; set; } = string.Empty;
+
+        public string Sugestao { get; set; } = string.Empty;
+
+
+
         // opcional: id para evolução futura
         public Guid Id { get; set; } = Guid.NewGuid();
+        public string? Modulo { get; set; }
+
     }
 }

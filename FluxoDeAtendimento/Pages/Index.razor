@@ -1,10 +1,98 @@
-﻿@page "/"
+﻿@page "/" // Garante que esta é a página inicial
+@inject NavigationManager NavManager
+@inject FluxoDeAtendimento.Repositories.ContatoRepository ContatoRepo // Injetar para poder zerar o fluxo
 
-<PageTitle>Index</PageTitle>
+<PageTitle>Menu Inicial - Fluxo de Atendimento</PageTitle>
 
-<h1>Fluxo de Atendimento</h1>
+<div class="container-fluid py-4">
+    @* Adiciona um padding geral *@
+    <h1 class="text-3xl font-bold mb-3">Olá, Atendente! Bem-vindo ao Sistema de Apoio ao Atendimento.</h1>
 
-<p>Bem vindo ao sistema de fluxo!</p>
+    @* Seção de Ações Rápidas e Métricas *@
+    <div class="row mb-4">
+        @* Card de Iniciar Novo Atendimento (AJUSTADO: col-md-5 -> col-md-6) *@
+        <div class="col-md-6 mb-3">
+            @* Tornando-o mais largo (6/12) para preencher o espaço *@
+            <div class="card shadow-sm h-100 d-flex flex-column justify-content-center p-4" style="background-color: #28a745; border-color: #28a745;">
+                @* Cor verde *@
+                <button class="btn btn-light btn-lg text-primary fw-bold d-flex align-items-center justify-content-center py-3" @onclick="StartNewAttendantFlow">
+                    <span class="oi oi-rocket me-2" aria-hidden="true"></span> Iniciar Novo Atendimento
+                </button>
+            </div>
+        </div>
 
-<!-- Imagem -->
-<img src="images/meuicone.png" width="200" />
+        @* Card de Métricas - Melhorias Registradas (Mantido em 3) *@
+        <div class="col-md-3 mb-3">
+            <div class="card shadow-sm h-100 d-flex flex-column justify-content-center text-white" style="background-color: #28a745; border-color: #28a745;">
+                @* Cor verde *@
+                <div class="card-body text-center">
+                    <h5 class="card-title mb-2"><span class="oi oi-check me-1" aria-hidden="true"></span> Melhorias Registradas (Esta Semana)</h5>
+                    <p class="card-text fs-1 fw-bold">00</p> @* Aumenta o tamanho do número *@
+                </div>
+            </div>
+        </div>
+
+        @* Card de Métricas - Tickets Abertos (Mantido em 3) *@
+        <div class="col-md-3 mb-3">
+            <div class="card shadow-sm h-100 d-flex flex-column justify-content-center text-white" style="background-color: #ffc107; border-color: #ffc107;">
+                @* Cor laranja (warning) *@
+                <div class="card-body text-center">
+                    <h5 class="card-title mb-2"><span class="oi oi-warning me-1" aria-hidden="true"></span> Tickets Abertos (Hoje)</h5>
+                    <p class="card-text fs-1 fw-bold">00</p> @* Aumenta o tamanho do número *@
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @* Seção de Guias e Atividade Recente *@
+    <div class="row">
+        @* Card de Guia Rápido (Mantido em 6) *@
+        <div class="col-md-6 mb-3">
+            <div class="card shadow-sm h-100">
+                <div class="card-header bg-primary text-white">
+                    @* Header azul *@
+                    <h5 class="mb-0"><span class="oi oi-book me-2" aria-hidden="true"></span> Guia Rápido dos Fluxos</h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><span class="oi oi-check me-2 text-success" aria-hidden="true"></span> 1. Identificação de Cliente</li>
+                    <li class="list-group-item"><span class="oi oi-check me-2 text-success" aria-hidden="true"></span> 2. Classificação (Suporte/Financeiro/Melhoria)</li>
+                    <li class="list-group-item"><span class="oi oi-check me-2 text-success" aria-hidden="true"></span> 3. Resolução e Registro</li>
+                    <li class="list-group-item"><span class="oi oi-check me-2 text-success" aria-hidden="true"></span> 4. Finalização de Atendimento</li>
+                </ul>
+            </div>
+        </div>
+
+        @* Card de Atividade Recente (Mantido em 6) *@
+        <div class="col-md-6 mb-3">
+            <div class="card shadow-sm h-100">
+                <div class="card-header bg-secondary text-white">
+                    @* Header cinza *@
+                    <h5 class="mb-0"><span class="oi oi-clock me-2" aria-hidden="true"></span> Atividade Recente</h5>
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><span class="oi oi-caret-right me-2 text-primary" aria-hidden="true"></span> Ainda não fiz essa parte...</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public string? AttendantName { get; set; } = "Atendente"; // Ajustei para "Atendente" como padrão.
+
+    private void StartNewAttendantFlow()
+    {
+        // Certifica que o repositório zera o estado antes de iniciar um novo atendimento
+        ContatoRepo.Limpar();
+        NavManager.NavigateTo("/identificacao");
+    }
+
+    protected override void OnInitialized()
+    {
+        // Se você não está obtendo o nome de um serviço, pode simplesmente
+        // manter o default "Atendente" ou um nome fixo para testes.
+    }
+}

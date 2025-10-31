@@ -1,21 +1,37 @@
-﻿<div class="top-row ps-3 navbar navbar-dark">
+﻿@using FluxoDeAtendimento.Repositories
+@inject FluxoDeAtendimento.Repositories.ContatoRepository ContatoRepo
+@inject NavigationManager NavManager
+
+<div class="top-row ps-3 navbar navbar-dark">
     <div class="container-fluid">
-        <a class="navbar-brand" href="">FluxoDeAtendimento</a>
-        <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+        <NavLink class="nav-link" href="/" Match="NavLinkMatch.All" style="color: white !important;">
+            <span class="oi oi-home" aria-hidden="true"></span> Menu Inicial
+        </NavLink>
     </div>
 </div>
 
 <div class="@NavMenuCssClass nav-scrollable" @onclick="ToggleNavMenu">
     <nav class="flex-column">
         <div>
-            <NavLink class="nav-link" href="/identificacao">
-                <span class="oi oi-person" aria-hidden="true"></span> Identificação
+
+            <a class="nav-link" href="javascript:void(0)" @onclick="StartNewAttendantFlow" style="color: white !important;">
+                <span class="oi oi-reload" aria-hidden="true"></span> Novo Atendimento
+            </a>
+
+            <NavLink class="nav-link" href="/identificacao" style="color: white !important;">
+                <span class="oi oi-person" aria-hidden="true"></span> Identificação de Contato
             </NavLink>
+
+            <NavLink class="nav-link" href="/melhoria" style="color: white !important;">
+                <span class="oi oi-lightbulb" aria-hidden="true"></span> Sugestão de Melhoria
+            </NavLink>
+
+            @* O restante do código duplicado e a tag <p> desnecessária na navegação foram removidos para simplificar. 
+            Lembre-se de que a cor branca só funcionará se as regras CSS no seu site.css também estiverem configuradas.
+            *@
+
         </div>
     </nav>
-
 </div>
 
 @code {
@@ -26,5 +42,14 @@
     private void ToggleNavMenu()
     {
         collapseNavMenu = !collapseNavMenu;
+    }
+
+    private void StartNewAttendantFlow()
+    {
+        // 1. Zera o contato atual e o histórico de etapas
+        ContatoRepo.Limpar();
+
+        // 2. Redireciona para a tela de identificação, garantindo que a URL seja limpa
+        NavManager.NavigateTo("/identificacao");
     }
 }
